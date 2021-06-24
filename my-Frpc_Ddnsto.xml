@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Frpc_Ddnsto</Name>
+  <Repository>linkease/ddnsto</Repository>
+  <Registry>https://hub.docker.com/r/linkease/ddnsto/</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://www.ddnsto.com/app/img/icon_router%20on.41df31ec.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1624445513</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>3d75674b-fa31-47ed-af9b-123e2def3cd6</Value>
+      <Name>TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>DEVICE_IDX</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="TOKEN" Target="TOKEN" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: TOKEN" Type="Variable" Display="always" Required="false" Mask="false">3d75674b-fa31-47ed-af9b-123e2def3cd6</Config>
+  <Config Name="Host Key 2" Target="DEVICE_IDX" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: DEVICE_IDX" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Host Key 3" Target="PUID" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Host Key 4" Target="PGID" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>

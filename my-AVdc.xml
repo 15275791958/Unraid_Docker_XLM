@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>AVdc</Name>
+  <Repository>vergilgao/avdc</Repository>
+  <Registry>https://hub.docker.com/r/vergilgao/avdc</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1620219385</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>1</HostDir>
+      <ContainerDir>TRANSLATE</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/&#x79C1;&#x4EBA;&#x6587;&#x4EF6;&#x5939;/AIKA</HostDir>
+      <ContainerDir>/app/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>1</Value>
+      <Name>FAILED_MOVE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>USE_PROXY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>http</Value>
+      <Name>PROXY_TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>127.0.0.1:1080</Value>
+      <Name>PROXY_URI</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>"actor+'/'+number"</Value>
+      <Name>LOCATION_RULE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>"number+'-'+title"</Value>
+      <Name>NAMING_RULE</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="&#x79FB;&#x52A8;&#x5931;&#x8D25;&#x522E;&#x524A;&#x6587;&#x4EF6;&#x81F3;&#x5931;&#x8D25;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5939;" Target="FAILED_MOVE" Default="" Mode="" Description="&#x79FB;&#x52A8;&#x5931;&#x8D25;&#x522E;&#x524A;&#x6587;&#x4EF6;&#x81F3;&#x5931;&#x8D25;&#x8F93;&#x51FA;&#x6587;&#x4EF6;&#x5939;" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="&#x7FFB;&#x8BD1;&#x81F3;&#x7B80;&#x4F53;&#x4E2D;&#x6587;" Target="TRANSLATE" Default="" Mode="rw" Description="&#x7FFB;&#x8BD1;&#x81F3;&#x7B80;&#x4F53;&#x4E2D;&#x6587;" Type="Path" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="&#x5F00;&#x542F;&#x4EE3;&#x7406;" Target="USE_PROXY" Default="" Mode="" Description="&#x5F00;&#x542F;&#x4EE3;&#x7406;" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="&#x4EE3;&#x7406;&#x7C7B;&#x578B;" Target="PROXY_TYPE" Default="" Mode="" Description="&#x4EE3;&#x7406;&#x7C7B;&#x578B;" Type="Variable" Display="always" Required="false" Mask="false">http</Config>
+  <Config Name="&#x4EE3;&#x7406;&#x5730;&#x5740;" Target="PROXY_URI" Default="" Mode="" Description="&#x4EE3;&#x7406;&#x5730;&#x5740;" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1:1080</Config>
+  <Config Name="&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x547D;&#x540D;&#x89C4;&#x5219;" Target="LOCATION_RULE" Default="" Mode="" Description="&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x547D;&#x540D;&#x89C4;&#x5219;" Type="Variable" Display="always" Required="false" Mask="false">"actor+'/'+number"</Config>
+  <Config Name="nfo&#x6587;&#x4EF6;&#x4E2D;&#x5F71;&#x7247;&#x547D;&#x540D;&#x89C4;&#x5219;" Target="NAMING_RULE" Default="" Mode="" Description="nfo&#x6587;&#x4EF6;&#x4E2D;&#x5F71;&#x7247;&#x547D;&#x540D;&#x89C4;&#x5219;" Type="Variable" Display="always" Required="false" Mask="false">"number+'-'+title"</Config>
+  <Config Name="&#x6587;&#x4EF6;" Target="/app/data" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /app/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/&#x79C1;&#x4EBA;&#x6587;&#x4EF6;&#x5939;/AIKA</Config>
+</Container>

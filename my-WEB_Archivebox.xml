@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Archivebox</Name>
+  <Repository>archivebox/archivebox:latest</Repository>
+  <Registry>https://hub.docker.com/r/archivebox/archivebox/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/89502-support-a75g-repo/</Support>
+  <Project>https://archivebox.io/</Project>
+  <Overview>The self-hosted internet archiver. &#xD;
+Guide - https://github.com/A75G/docker-templates/blob/master/README.md#first-installation (Important)</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/archivebox.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/A75G/docker-templates/master/templates/icons/archivebox.png</Icon>
+  <ExtraParams>-it</ExtraParams>
+  <PostArgs>server --quick-init 0.0.0.0:8000</PostArgs>
+  <CPUset/>
+  <DateInstalled>1619516649</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>The self-hosted internet archiver. &#xD;
+Guide - https://github.com/A75G/docker-templates/blob/master/README.md#first-installation (Important)</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Appdata/Archivebox/</HostDir>
+      <ContainerDir>/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Port" Target="8000" Default="8000" Mode="tcp" Description="Port" Type="Port" Display="always" Required="true" Mask="false">8000</Config>
+  <Config Name="Data" Target="/data" Default="/mnt/user/appdata/archivebox/" Mode="rw" Description="Data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Appdata/Archivebox/</Config>
+</Container>

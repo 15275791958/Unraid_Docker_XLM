@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>VM_Centos7</Name>
+  <Repository>centos:7</Repository>
+  <Registry>https://hub.docker.com/_/centos</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://d1q6f0aelx0por.cloudfront.net/product-logos/library-centos-logo.png</Icon>
+  <ExtraParams>-i -t --privileged=true</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1624536634</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Appdata/Centos7</HostDir>
+      <ContainerDir>/www</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/www" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /www" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Appdata/Centos7</Config>
+</Container>

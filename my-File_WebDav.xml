@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>File_WebDAV</Name>
+  <Repository>ugeek/webdav:amd64</Repository>
+  <Registry>https://hub.docker.com/r/ugeek/webdav</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1624529089</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>10006</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/</HostDir>
+      <ContainerDir>/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>admin</Value>
+      <Name>USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>Webdav273406++--</Value>
+      <Name>PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>UDI</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>GID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/media" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /media" Type="Path" Display="always" Required="false" Mask="false">/mnt/</Config>
+  <Config Name="Host Port 1" Target="80" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: 80" Type="Port" Display="always" Required="false" Mask="false">10006</Config>
+  <Config Name="Host Key 1" Target="USERNAME" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: USERNAME" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="Host Key 2" Target="PASSWORD" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PASSWORD" Type="Variable" Display="always" Required="false" Mask="false">Webdav273406++--</Config>
+  <Config Name="Host Key 3" Target="UDI" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: UDI" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Host Key 4" Target="GID" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: GID" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>

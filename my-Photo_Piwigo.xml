@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Piwigo</Name>
+  <Repository>linuxserver/piwigo</Repository>
+  <Registry>https://hub.docker.com/r/linuxserver/piwigo/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/40890-support-linuxserverio-piwigo/</Support>
+  <Project>http://piwigo.org/</Project>
+  <Overview>Piwigo is photo gallery software for the web, built by an active community of users and developers.</Overview>
+  <Category>MediaServer:Photos</Category>
+  <WebUI>http://[IP]:[PORT:80]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/piwigo.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/piwigo-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1617101698</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Piwigo is photo gallery software for the web, built by an active community of users and developers.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>10012</HostPort>
+        <ContainerPort>80</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/&#x79C1;&#x4EBA;&#x6587;&#x4EF6;&#x5939;/&#x76F8;&#x518C;/</HostDir>
+      <ContainerDir>/root/Photo</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Appdata/Homes/Photo_Piwigo</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>99</Value>
+      <Name>PUID</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>100</Value>
+      <Name>PGID</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="80" Default="80" Mode="tcp" Description="Container Port: 80" Type="Port" Display="always" Required="true" Mask="false">10012</Config>
+  <Config Name="Key 1" Target="PUID" Default="99" Mode="" Description="Container Variable: PUID" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="Key 2" Target="PGID" Default="100" Mode="" Description="Container Variable: PGID" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Host Path 1" Target="/root/Photo" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /root/Photo" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/&#x79C1;&#x4EBA;&#x6587;&#x4EF6;&#x5939;/&#x76F8;&#x518C;/</Config>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/Docker/piwigo" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/Appdata/Homes/Photo_Piwigo</Config>
+</Container>

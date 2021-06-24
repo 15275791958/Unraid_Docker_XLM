@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Frpc_PuGongYing</Name>
+  <Repository>bestoray/pgyvpn</Repository>
+  <Registry>https://hub.docker.com/r/bestoray/pgyvpn</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://cdn.orayimg.com/peanuthull/img/mobile/icon/icon_pgy.png</Icon>
+  <ExtraParams>--cap-add NET_ADMIN</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1624456617</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Appdata/Oray/pgyvpn/log</HostDir>
+      <ContainerDir>/var/log/oray</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Appdata/Oray/pgyvpn/config</HostDir>
+      <ContainerDir>/etc/oray/pgyvpn</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>15275791958</Value>
+      <Name>PGY_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>hsk15275791958</Value>
+      <Name>PGY_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="PGY_USERNAME" Target="PGY_USERNAME" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PGY_USERNAME" Type="Variable" Display="always" Required="true" Mask="false">15275791958</Config>
+  <Config Name="PGY_PASSWORD" Target="PGY_PASSWORD" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: PGY_PASSWORD" Type="Variable" Display="always" Required="true" Mask="false">hsk15275791958</Config>
+  <Config Name="log" Target="/var/log/oray" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /var/log/oray" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Appdata/Oray/pgyvpn/log</Config>
+  <Config Name="config" Target="/etc/oray/pgyvpn" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: /etc/oray/pgyvpn" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Appdata/Oray/pgyvpn/config</Config>
+</Container>

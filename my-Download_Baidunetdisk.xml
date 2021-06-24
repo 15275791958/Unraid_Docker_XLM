@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Download_Baidunetdisk</Name>
+  <Repository>johngong/baidunetdisk</Repository>
+  <Registry>https://hub.docker.com/r/johngong/baidunetdisk</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project>https://hub.docker.com/r/johngong/baidunetdisk</Project>
+  <Overview/>
+  <Category>Cloud:</Category>
+  <WebUI>http://[IP]:[PORT:10100]/</WebUI>
+  <TemplateURL/>
+  <Icon>http://img3.downza.cn/download/202008/133448-5f489778a5a51.jpg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1624526731</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>10100</HostPort>
+        <ContainerPort>5800</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>10101</HostPort>
+        <ContainerPort>5900</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Appdata/Baidunetdisk/</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Download/&#x767E;&#x5EA6;&#x4E91;/</HostDir>
+      <ContainerDir>/mnt/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value/>
+      <Name>VNC_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="5800" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: WEB&#x754C;&#x9762;&#x8BBF;&#x95EE;&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="false" Mask="false">10100</Config>
+  <Config Name="Host Port 2" Target="5900" Default="" Mode="tcp" Description="&#x5BB9;&#x5668; Port: VNC&#x534F;&#x8BAE;&#x8BBF;&#x95EE;&#x7AEF;&#x53E3;" Type="Port" Display="always" Required="false" Mask="false">10101</Config>
+  <Config Name="Host Path 1" Target="/config" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path:&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Appdata/Baidunetdisk/</Config>
+  <Config Name="Host Path 2" Target="/mnt/downloads" Default="" Mode="rw" Description="&#x5BB9;&#x5668; Path: &#x4E0B;&#x8F7D;&#x8DEF;&#x5F84;(3.3.2&#x9700;&#x624B;&#x52A8;&#x8BBE;&#x7F6E;)" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Download/&#x767E;&#x5EA6;&#x4E91;/</Config>
+  <Config Name="Host Key 1" Target="VNC_PASSWORD" Default="" Mode="" Description="&#x5BB9;&#x5668; Variable: VNC&#x5BC6;&#x7801;" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
